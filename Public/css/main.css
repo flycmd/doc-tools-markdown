@@ -15,8 +15,8 @@
 html,body{
     height: 100%;
     overflow: hidden;
-    /* 黑色主题 */
-    background-color: #110F14;
+    /* 深蓝主题 */
+    background-color: #1C1F2B;
 }
 
 /*--------------------------------------------------------------------------------------------------*/
@@ -30,7 +30,7 @@ html,body{
     width: 270px;
     overflow-x: hidden;
     overflow-y: scroll;
-    background-color: #333;
+    background-color: #2D3143;
 }
 /* 基础样式 */
 #nav ul li{
@@ -93,7 +93,7 @@ html,body{
 /* ----------- */
 #container{
     height: 100%;
-    overflow-y: scroll;
+    overflow-y: hidden;
     margin-left: 290px;
     padding-right: 20px;
     padding-bottom: 20px;

@@ -83,9 +83,12 @@ else {// 未登录
 
     <!-- highlight 代码高亮 -->
     <link rel="stylesheet" href="Public/plugin/highlight/styles/ir-black.css">
+
+    <!-- 滚动条 -->
+    <link rel="stylesheet" href="Public/plugin/custom-scrollbar/jquery.mCustomScrollbar.css">
 </head>
 <body>
-    <div id="nav">
+    <div id="nav" class="mCS-autoHide">
         <!-- 面包屑 -->
         <?php
             if ($class) {
@@ -130,7 +133,7 @@ else {// 未登录
         </ul>
     </div>
 
-    <div id="container" class="clearfix">
+    <div id="container" class="mCS-autoHide clearfix">
         <!-- 内容区域 -->
         <div class="article">
             <?php
@@ -189,6 +192,34 @@ else {// 未登录
     <script>
         /* 代码高亮 */
         hljs.initHighlightingOnLoad();
+    </script>
+
+    <!-- 滚动条 -->
+    <script src="Public/plugin/custom-scrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="Public/plugin/custom-scrollbar/jquery.mCustomScrollbar.js"></script>
+    <script type='text/javascript'>
+        (function($){
+            $(window).load(function(){
+                $("#nav").mCustomScrollbar({
+                    scrollButtons:{
+                        enable:false,
+                        scrollType:"continuous",
+                        scrollSpeed:40,
+                        scrollAmount:40
+                    },
+                    horizontalScroll:false,
+                });
+                $('#container').mCustomScrollbar({
+                    scrollButtons:{
+                        enable:false,
+                        scrollType:"continuous",
+                        scrollSpeed:40,
+                        scrollAmount:60
+                    },
+                    horizontalScroll:false,
+                });
+            });
+        })(jQuery);
     </script>
 
     <!-- config -->
