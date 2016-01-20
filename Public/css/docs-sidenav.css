@@ -1,0 +1,17 @@
+#docs-sidenav{
+    width: 200px;
+    position: fixed;
+    top: 60px;
+    right: 20px;
+    z-index: 1001;
+    background-color: #333;
+    opacity: 0.5;
+    display: none;
+}
+#docs-sidenav li{
+    margin: 5px;
+}
+#docs-sidenav a{
+    color: #80bd01;
+    font-size: 16px;
+}

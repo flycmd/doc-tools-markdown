@@ -1,0 +1,24 @@
+@charset "UTF-8";
+
+/**
+ * 基础css文件
+ * @author flycmd
+ * @email  root@flycmd.com
+ * @time   2016-01-16 14:41:32
+ * @blog   blog.flycmd.com
+ */
+
+/* 清除浮动 */
+.clearfix:after,
+.clearfix:before {
+    display: table;
+    content: " ";
+}
+.clearfix:after {
+    clear: both;
+}
+
+/* 隐藏 */
+.hidden{
+    display: none;
+}

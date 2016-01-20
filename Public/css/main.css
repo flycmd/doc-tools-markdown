@@ -1,0 +1,149 @@
+@charset "UTF-8";
+
+/**
+ * 主样式表
+ * @author flycmd
+ * @email  root@flycmd.com
+ * @time   2016-01-16 14:41:32
+ * @blog   blog.flycmd.com
+ */
+
+/* ----------- */
+/* 基础样式 */
+/* ----------- */
+
+html,body{
+    height: 100%;
+    overflow: hidden;
+    /* 黑色主题 */
+    background-color: #110F14;
+}
+
+/*--------------------------------------------------------------------------------------------------*/
+
+/* ----------- */
+/* 左边导航栏 */
+/* ----------- */
+#nav{
+    position: absolute;
+    height: 100%;
+    width: 270px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    background-color: #333;
+}
+/* 基础样式 */
+#nav ul li{
+    padding: 1px 0px 1px 20px;
+    margin: 15px auto;
+    font-size: 14px;
+}
+#nav ul li a{
+    display: block;
+    color: #ccc;
+    white-space:nowrap;
+    overflow:hidden;
+    text-overflow: ellipsis;
+}
+#nav ul li a .count{
+    padding: 0px 10px;
+    color: #80bd01;
+    font-weight: bold;
+}
+/* 划过样式 */
+#nav ul li:hover{
+    border-left: 3px #80bd01 solid;
+}
+#nav ul li:hover a{
+    color: #fff;
+    text-decoration: none;
+}
+/* 选中样式 */
+#nav ul li.active a{
+    color: #80bd01;
+    text-decoration: underline;
+}
+/* 返回上一层 */
+.crumbs{
+    padding-left: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    height: 46px;
+    line-height: 46px;
+    font-weight: bold;
+    font-size: 24px;
+    color: #ddd;
+}
+.crumbs a{
+    display: block;
+    color: #ddd;
+    white-space:nowrap;
+    overflow:hidden;
+    text-overflow: ellipsis;
+}
+.crumbs a:hover{
+    color: #fff;
+    text-decoration: none;
+}
+
+/*--------------------------------------------------------------------------------------------------*/
+
+/* ----------- */
+/*  右边内容   */
+/* ----------- */
+#container{
+    height: 100%;
+    overflow-y: scroll;
+    margin-left: 290px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+}
+
+/* 页脚 */
+.article{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+/*--------------------------------------------------------------------------------------------------*/
+
+/* ----------- */
+/*  登陆模块   */
+/* ----------- */
+.login-mask {
+    width: 100%;
+    height: 100%;
+    z-index: 8;
+    background: #000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+}
+#login-alert {
+    width: 440px;
+    background: #fff;
+    position: fixed;
+    left: 50%;
+    margin-left: -220px;
+    z-index: 99;
+    display: none;
+    padding: 20px;
+}
+#login-alert form{
+    margin-top: 0px 20px 20px;
+}
+#login-alert form input{
+    width: 405px;
+    height: 14px;
+    padding: 15px;
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+#login-alert form .error{
+    color: #E81123;
+    font-weight: bold;
+}
+#login-alert form button{
+    margin-top: 20px;
+    width: 100%;
+}

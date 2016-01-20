@@ -1,0 +1,119 @@
+.article h1, .article h2, .article h3, .article h4, .article h5, .article h6, .article p, .article blockquote {
+   margin: 0;
+   padding: 0;
+}
+.article {
+   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+   font-size: 13px;
+   line-height: 18px;
+   color: #fff;
+}
+.article table {
+   margin: 10px 0 15px 0;
+   border-collapse: collapse;
+}
+.article td,.article th {
+   border: 1px solid #ddd;
+   padding: 3px 10px;
+}
+.article th {
+   padding: 5px 10px;
+}
+.article a {
+   color: #59acf3;
+}
+.article a:hover {
+   color: #a7d8ff;
+   text-decoration: none;
+}
+.article a img {
+   border: none;
+}
+.article p {
+   margin-bottom: 9px;
+}
+.article h1, .article h2, .article h3, .article h4, .article h5, .article h6 {
+   color: #fff;
+   line-height: 36px;
+}
+.article h1 {
+   margin-bottom: 18px;
+   font-size: 30px;
+}
+.article h2 {
+   font-size: 24px;
+}
+.article h3 {
+   font-size: 18px;
+}
+.article h4 {
+   font-size: 16px;
+}
+.article h5 {
+   font-size: 14px;
+}
+.article h6 {
+   font-size: 13px;
+}
+.article hr {
+   margin: 0 0 19px;
+   border: 0;
+   border-bottom: 1px solid #ccc;
+}
+.article blockquote {
+   padding: 13px 13px 21px 15px;
+   margin-bottom: 18px;
+   font-family:georgia,serif;
+   font-style: italic;
+}
+.article blockquote:before {
+   content:"\201C";
+   font-size:40px;
+   margin-left:-10px;
+   font-family:georgia,serif;
+   color:#eee;
+}
+.article blockquote p {
+   font-size: 14px;
+   font-weight: 300;
+   line-height: 18px;
+   margin-bottom: 0;
+   font-style: italic;
+}
+
+.article code, .article pre {
+   font-family: Menlo, Monaco, Andale Mono, Courier New, monospace;
+}
+
+.article code {
+   padding: 1px 3px;
+   font-size: 12px;
+   -webkit-border-radius: 3px;
+   -moz-border-radius: 3px;
+   border-radius: 3px;
+   background: #334;
+}
+
+.article pre {
+   display: block;
+   padding: 14px;
+   margin: 0 0 18px;
+   line-height: 16px;
+   font-size: 11px;
+   border: 1px solid #334;
+   white-space: pre;
+   white-space: pre-wrap;
+   word-wrap: break-word;
+   background-color: #282a36;
+   border-radius: 6px;
+}
+.article pre code {
+   font-size: 11px;
+   padding: 0;
+   background: transparent;
+}
+.article sup {
+   font-size: 0.83em;
+   vertical-align: super;
+   line-height: 0;
+}
