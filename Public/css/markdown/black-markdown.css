@@ -91,7 +91,8 @@
    -webkit-border-radius: 3px;
    -moz-border-radius: 3px;
    border-radius: 3px;
-   color: #9dbed8;
+   color: #BD2D30;
+   font-weight: bold;
    background: #2D3143;
    border-radius: 4px;
 }
